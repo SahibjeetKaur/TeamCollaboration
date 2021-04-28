@@ -103,10 +103,10 @@ function App()  {
             <PrivateRoute exact path='/Notes' component={Notes} />
             <PrivateRoute exact path='/Setting' component={Settings} />
             <PrivateRoute exact path='/Tasks' component={TasksGroup} />
-            <PrivateRoute exact path='/Tasks/Date' component={TasksDate} />
-            <PrivateRoute exact path='/Tasks/Group' component={TasksGroup} />
-            <PrivateRoute exact path='/Report' component={Report} />
-            <PrivateRoute exact path='/Makeproject' component={MakeProject} />
+            <Route exact path='/Tasks/Date' component={TasksDate} />
+            <Route exact path='/Tasks/Group' component={TasksGroup} />
+            <Route exact path='/Report' component={Report} />
+            <Route exact path='/Makeproject' component={MakeProject} />
             <PrivateRoute exact path='/announcements' component={Announcementdisplay} />
             
 
