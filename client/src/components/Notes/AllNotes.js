@@ -38,6 +38,10 @@ const EditNote = (id) => {
   
   return (
     <div>
+      <tr>
+      <td><h3>Note Title: </h3></td>
+      <td><h3>Description: </h3></td>
+      </tr>
       {posts.map((note, key) => (
         // <Post post={post} key={post.id} />
        
@@ -45,10 +49,7 @@ const EditNote = (id) => {
         <td>{note.title}</td>
         <td>{note.description}</td>
         <td>
-        <button  onClick={() => EditNote(note._id)} className='btn btn-dark btn-sm'>
        
-            Edit
-            </button >
             </td>
             <td> 
             <button  onClick={() => deleteNote(note._id)}  className='btn btn-danger btn-sm' >

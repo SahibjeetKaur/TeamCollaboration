@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "e6847218-1776-4b62-8ee3-fc61e889e057",
+		"name": "ProjectSetting",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getList",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/setting",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"setting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newSetting",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA3YTRlNGY4MDliM2Q1MGYwM2MwZTNiIn0sImlhdCI6MTYxODc0NTU1MSwiZXhwIjoxNjE5MTA1NTUxfQ.zICqBjUhGXtSBykKCrA64wo-VL_DlzCMO72vepAqxBc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"name\":\"Capstone\",\r\n    \"key\": \"cap\",\r\n    \"category\":\"software\",\r\n    \"projectlead\":\"John\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/setting",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"setting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA3YTRlNGY4MDliM2Q1MGYwM2MwZTNiIn0sImlhdCI6MTYxOTYwMTI1NiwiZXhwIjoxNjE5OTYxMjU2fQ.FvQtNeuSf7-cCF3xywXgekNr6TWKFFq7W-Kfo9bDSTk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"607c1f645ebe6d1a08f290fc\",\r\n    \"name\":\"Capstone\",\r\n    \"key\": \"cap\",\r\n    \"category\":\"software\",\r\n    \"projectlead\":\"John\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/setting",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"setting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteSetting",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjA3YTRlNGY4MDliM2Q1MGYwM2MwZTNiIn0sImlhdCI6MTYxOTYwMTI1NiwiZXhwIjoxNjE5OTYxMjU2fQ.FvQtNeuSf7-cCF3xywXgekNr6TWKFFq7W-Kfo9bDSTk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"60892be53fc7a03f84ed5498\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/setting",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"setting"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
