@@ -21,6 +21,7 @@ import MakeProject from './components/MakeProject/MakeProject';
 import TasksGroup from './components/pages/Tasks/TasksGroup';
 import TasksDate from './components/pages/Tasks/TasksDate';
 import Report from './components/pages/Report/Report';
+import Messages from './components/pages/messages/MainChat';
 
 import AllNotes from './components/Notes/AllNotes';
 import Settings from './components/ProjectSettings/Setting';
@@ -95,14 +96,17 @@ function App()  {
                   <PrivateRoute exact path="/ShowProfile" component={ShowProfile} />
 
 
+
+
+            <PrivateRoute exact path='/Messages' component={Messages} />
             <PrivateRoute exact path='/Notification' component={Notification} />
             <PrivateRoute exact path='/Notes' component={Notes} />
             <PrivateRoute exact path='/Setting' component={Settings} />
-            <PrivateRoute exact path='/Tasks' component={TasksGroup} />
-            <PrivateRoute exact path='/Tasks/Date' component={TasksDate} />
-            <PrivateRoute exact path='/Tasks/Group' component={TasksGroup} />
-            <PrivateRoute exact path='/Report' component={Report} />
-            <PrivateRoute exact path='/Makeproject' component={MakeProject} />
+            <Route exact path='/Tasks' component={TasksGroup} />
+            <Route exact path='/Tasks/Date' component={TasksDate} />
+            <Route exact path='/Tasks/Group' component={TasksGroup} />
+            <Route exact path='/Report' component={Report} />
+            <Route exact path='/Makeproject' component={MakeProject} />
             <PrivateRoute exact path='/announcements' component={Announcementdisplay} />
             
 
