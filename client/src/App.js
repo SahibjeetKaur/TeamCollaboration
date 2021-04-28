@@ -102,7 +102,7 @@ function App()  {
             <PrivateRoute exact path='/Notification' component={Notification} />
             <PrivateRoute exact path='/Notes' component={Notes} />
             <PrivateRoute exact path='/Setting' component={Settings} />
-            <PrivateRoute exact path='/Tasks' component={TasksGroup} />
+            <Route exact path='/Tasks' component={TasksGroup} />
             <Route exact path='/Tasks/Date' component={TasksDate} />
             <Route exact path='/Tasks/Group' component={TasksGroup} />
             <Route exact path='/Report' component={Report} />
